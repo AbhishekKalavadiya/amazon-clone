@@ -1,8 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## About Amazon-clone
+
+This is an Amazon-clone which is an e-commerce site. This Frontend is built in React with help of context API and other React Hooks. In this build used Context API (useReducer, createContext) to get data directly from the app component to the needy component. Used material UI for some icons. And Used the flexbox for the CSS parts. We can also include the login with the firebase system.
+
+## Technology stack used:
+ReactJs, Material UI, Context API, React-Courrency-Format, Firebase
 
 ### `yarn start`
 
