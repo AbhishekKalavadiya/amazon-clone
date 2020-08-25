@@ -1,0 +1,10 @@
+.home{
+    display: flex;
+    justify-content: space-around;
+}
+
+.home > img {
+    width: 100%;
+    object-fit: contain;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,100), rgba(0,0,0,0))
+}

@@ -1,11 +1,30 @@
 import React from 'react';
+import Header from './components/Header'
+import Home from './components/Home'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 
 function App() {
 	return (
-		<div className="App">
-			<h1>Lets Build amazon clone</h1>
-		</div>
+		<Router>
+			<div className="app">
+				
+				<Switch>
+					<Route path='/checkout'>
+						<Header />
+						<h1>CheckOut</h1>
+					</Route>	
+
+					<Route path='/login'><h1>Login</h1></Route>
+
+					<Route path='/'>
+						<Header />
+						<Home />
+					</Route>	
+
+				</Switch>	
+			</div>
+		</Router>
 	);
 }
 
