@@ -1,8 +1,19 @@
 import React from 'react'
+import {useStateView} from '../StateProvider'
 import './CheckoutProduct.css'
 
 
 function CheckoutProduct({ item, title, price, rating, image}) {
+
+    const [{basket}, dispatch] = useStateView()
+
+    const removeFromBasket = () => {
+        dispatch({
+            type: 'REMOVE_FROM_BASKET',
+            id: item,
+        })
+    }
+
     return (
         <div className='checkoutProduct'>
             <img src={image} alt=''/>
@@ -22,7 +33,7 @@ function CheckoutProduct({ item, title, price, rating, image}) {
                     }
                 </div>
 
-                <button>Remove from basket</button>
+                <button onClick={removeFromBasket}>Remove from basket</button>
             </div>
         </div>
     )

@@ -1,6 +1,8 @@
 .checkoutProduct{
     display: flex;
-    height: 250px
+    align-items: center;
+    height: 250px;
+    /* margin: 20px 0; */
 }
 
 .checkoutProduct > img {
